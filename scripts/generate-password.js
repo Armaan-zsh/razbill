@@ -1,4 +1,4 @@
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 // CHANGE THIS to your desired password (50+ characters is great for security!)
 const password = 'ThisIsMyVeryLongAndSecurePasswordThatNobodyWillEverGuessInAMillionYears2024!';
