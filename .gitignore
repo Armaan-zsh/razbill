@@ -1,0 +1,4 @@
+node_modules/
+.next/
+.env
+user_input_files/
