@@ -15,6 +15,7 @@ export default function EditorPage() {
     const [content, setContent] = useState('')
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState('')
+    const [uploading, setUploading] = useState(false)
 
     useEffect(() => {
         if (editSlug) {
@@ -30,6 +31,47 @@ export default function EditorPage() {
                 .catch(err => setError('Failed to load post'))
         }
     }, [editSlug, isDraft])
+
+    const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0]
+        if (!file) return
+
+        if (!file.type.startsWith('image/')) {
+            setError('Please select an image file')
+            return
+        }
+
+        if (file.size > 5 * 1024 * 1024) {
+            setError('Image size must be less than 5MB')
+            return
+        }
+
+        setUploading(true)
+        setError('')
+
+        try {
+            const formData = new FormData()
+            formData.append('file', file)
+
+            const res = await fetch('/api/admin/upload', {
+                method: 'POST',
+                body: formData,
+            })
+
+            if (res.ok) {
+                const data = await res.json()
+                const imageMarkdown = `\n![${file.name}](${data.url})\n`
+                setContent(prev => prev + imageMarkdown)
+            } else {
+                setError('Failed to upload image')
+            }
+        } catch (err) {
+            setError('Something went wrong uploading image')
+        } finally {
+            setUploading(false)
+            e.target.value = ''
+        }
+    }
 
     const handleSave = async (publish: boolean) => {
         if (!title || !summary || !content) {
@@ -150,7 +192,24 @@ export default function EditorPage() {
                     </div>
 
                     <div>
-                        <label className="block text-sm text-subtle mb-2">Content (Markdown)</label>
+                        <div className="flex items-center justify-between mb-2">
+                            <label className="block text-sm text-subtle">Content (Markdown)</label>
+                            <div>
+                                <input
+                                    type="file"
+                                    id="image-upload"
+                                    accept="image/*"
+                                    onChange={handleImageUpload}
+                                    className="hidden"
+                                />
+                                <label
+                                    htmlFor="image-upload"
+                                    className={`px-3 py-1 text-sm bg-surface border border-overlay rounded cursor-pointer hover:border-iris transition ${uploading ? 'opacity-50 cursor-not-allowed' : ''}`}
+                                >
+                                    {uploading ? 'Uploading...' : '📷 Upload Image'}
+                                </label>
+                            </div>
+                        </div>
                         <textarea
                             value={content}
                             onChange={(e) => setContent(e.target.value)}
