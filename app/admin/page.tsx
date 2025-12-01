@@ -3,6 +3,8 @@ import { verifySession, deleteSession } from '@/lib/auth'
 import { getAllPosts, getAllDrafts } from '@/lib/posts'
 import Link from 'next/link'
 
+export const dynamic = 'force-dynamic'
+
 export default async function AdminPage() {
     const session = await verifySession()
 
