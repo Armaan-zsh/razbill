@@ -1,9 +1,9 @@
 import { MetadataRoute } from 'next'
-import { getAllPosts } from '@/lib/posts'
+import { getAllPostsSync } from '@/lib/posts'
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://your-domain.vercel.app'
-  const posts = await getAllPosts()
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'https://armaan-zsh.github.io/razbill'
+  const posts = getAllPostsSync()
 
   const staticPages = [
     {

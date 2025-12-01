@@ -1,8 +1,13 @@
-import { getAllPosts } from '@/lib/posts'
+import { getAllPostsSync } from '@/lib/posts'
 import { PostCard } from '@/components/post-card'
 
-export default async function ArchivePage() {
-  const posts = await getAllPosts()
+export const metadata = {
+  title: 'Archive',
+  description: 'All blog posts',
+}
+
+export default function ArchivePage() {
+  const posts = getAllPostsSync()
 
   return (
     <div className="max-w-4xl mx-auto px-8 py-16">
@@ -26,9 +31,4 @@ export default async function ArchivePage() {
       )}
     </div>
   )
-}
-
-export const metadata = {
-  title: 'Archive',
-  description: 'All blog posts',
 }

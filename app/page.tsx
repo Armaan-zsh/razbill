@@ -1,8 +1,8 @@
-import { getAllPosts } from '@/lib/posts'
+import { getAllPostsSync } from '@/lib/posts'
 import Link from 'next/link'
 
-export default async function HomePage() {
-  const posts = await getAllPosts()
+export default function HomePage() {
+  const posts = getAllPostsSync()
 
   return (
     <div className="min-h-[80vh] flex flex-col items-center justify-center px-8">

@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation'
-import { getPostBySlug, getAllPostSlugs } from '@/lib/posts'
+import { getPostBySlugSync, getAllPostsSlugs } from '@/lib/posts'
 import { MDXContent } from '@/components/mdx-content'
 import { SocialShare } from '@/components/social-share'
 import { format } from 'date-fns'
@@ -18,16 +18,16 @@ interface PostPageProps {
   }
 }
 
-export async function generateStaticParams() {
-  const slugs = await getAllPostSlugs()
+export function generateStaticParams() {
+  const slugs = getAllPostsSlugs()
 
   return slugs.map((slug) => ({
     slug,
   }))
 }
 
-export async function generateMetadata({ params }: PostPageProps): Promise<Metadata> {
-  const post = await getPostBySlug(params.slug)
+export function generateMetadata({ params }: PostPageProps): Metadata {
+  const post = getPostBySlugSync(params.slug)
 
   if (!post) {
     return {
@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
 }
 
 export default async function PostPage({ params }: PostPageProps) {
-  const post = await getPostBySlug(params.slug)
+  const post = getPostBySlugSync(params.slug)
 
   if (!post) {
     notFound()
@@ -65,14 +65,12 @@ export default async function PostPage({ params }: PostPageProps) {
 
   const { frontmatter, slug, content } = post
   const { title, date } = frontmatter
-  const url = `https://your-domain.vercel.app/posts/${slug}`
+  const url = `https://armaan-zsh.github.io/razbill/posts/${slug}`
 
   const { content: mdxContent } = await compileMDX({
     source: content,
-
     options: {
       parseFrontmatter: false,
-
     }
   })
 

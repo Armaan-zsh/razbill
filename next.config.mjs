@@ -25,9 +25,6 @@ const nextConfig = {
     },
     basePath: '/razbill',
     assetPrefix: '/razbill/',
-    experimental: {
-        mdxRs: false
-    }
 }
 
 export default withMDX(nextConfig)
