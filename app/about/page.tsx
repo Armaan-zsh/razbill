@@ -24,6 +24,21 @@ export default function AboutPage() {
             sometimes it's insightful. mostly it's just me trying to sound smart.
           </p>
         </div>
+
+        {/* Added links section */}
+        <div className="pt-8 border-t border-gray-800">
+          <p className="text-subtle text-sm">
+            find me elsewhere:{' '}
+            <a
+              href="https://github.com/Armaan-zsh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-iris hover:text-foam underline underline-offset-4 transition-colors"
+            >
+              github.com/Armaan-zsh
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   )
