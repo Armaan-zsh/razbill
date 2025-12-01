@@ -38,4 +38,3 @@ weekly-blog/
 ├── tailwind.config.js        # Tailwind configuration
 ├── tsconfig.json             # TypeScript configuration
 └── README.md                 # Documentation
-lets see if this works
