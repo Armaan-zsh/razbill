@@ -2,6 +2,10 @@ import { NextRequest, NextResponse } from 'next/server'
 import { verifySession } from '@/lib/auth'
 import { getPostBySlug } from '@/lib/posts'
 
+export async function generateStaticParams() {
+    return []
+}
+
 export async function GET(
     request: NextRequest,
     { params }: { params: { slug: string } }
