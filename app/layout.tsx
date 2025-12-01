@@ -4,7 +4,7 @@ import { VimNavigation } from '@/components/vim-navigation'
 import './globals.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'),
+  metadataBase: new URL('https://armaan-zsh.github.io/razbill'),
   title: {
     default: '~/blog',
     template: '%s | ~/blog'
