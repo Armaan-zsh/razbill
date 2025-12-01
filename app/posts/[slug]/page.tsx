@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
     openGraph: {
       title,
       description: summary,
-      url: `https://your-domain.vercel.app/posts/${post.slug}`,
+      url: `https://armaan-zsh.github.io/razbill/posts/${post.slug}`,
       type: 'article',
       publishedTime: frontmatter.date,
     },
