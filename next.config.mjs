@@ -19,9 +19,12 @@ const withMDX = createMDX({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
+    output: 'export',
     images: {
         unoptimized: true
     },
+    basePath: '/razbill',
+    assetPrefix: '/razbill/',
     experimental: {
         mdxRs: false
     }
