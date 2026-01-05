@@ -16,19 +16,22 @@ export function VimNavigation() {
 
             switch (e.key) {
                 case "j":
-                    window.scrollBy({ top: 80, behavior: "smooth" })
+                    window.scrollBy({ top: 100, behavior: "smooth" })
                     break
                 case "k":
-                    window.scrollBy({ top: -80, behavior: "smooth" })
+                    window.scrollBy({ top: -100, behavior: "smooth" })
                     break
                 case "g":
                     if (e.shiftKey) {
                         // Shift+G = bottom
-                        window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" })
+                        window.scrollTo({ top: document.documentElement.scrollHeight, behavior: "smooth" })
+                    } else {
+                        // g = top
+                        window.scrollTo({ top: 0, behavior: "smooth" })
                     }
                     break
                 case "G":
-                    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" })
+                    window.scrollTo({ top: document.documentElement.scrollHeight, behavior: "smooth" })
                     break
             }
         }

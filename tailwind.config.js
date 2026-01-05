@@ -9,21 +9,25 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        base: '#191724',
-        surface: '#1f1d2e',
-        overlay: '#26233a',
-        muted: '#6e6a86',
-        subtle: '#908caa',
-        text: '#e0def4',
-        love: '#eb6f92',
-        gold: '#f6c177',
-        rose: '#ebbcba',
-        pine: '#31748f',
-        foam: '#9ccfd8',
-        iris: '#c4a7e7',
+        // Minimalist dark theme inspired by nexxel.dev
+        background: '#111010',
+        foreground: '#ededed',
+        subtle: '#282828',
+        muted: '#a0a0a0',
+        accent: '#333333',
       },
       fontFamily: {
-        mono: ['JetBrains Mono', 'Fira Code', 'Consolas', 'monospace'],
+        sans: ['var(--font-geist-sans)'],
+        mono: ['var(--font-geist-mono)'],
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.5s ease-in-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
       },
     },
   },

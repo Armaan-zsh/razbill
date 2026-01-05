@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { cn } from '@/lib/utils'
 
 const navItems = [
   { href: '/', label: 'home' },
@@ -13,28 +14,25 @@ export function Navigation() {
   const pathname = usePathname()
 
   return (
-    <header className="border-b border-overlay bg-base/80 backdrop-blur-sm sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto flex h-16 items-center justify-between px-8">
-        <Link href="/" className="font-bold text-xl text-iris hover:text-foam transition">
-          <span className="text-muted">~/</span>blog
-        </Link>
+    <nav className="flex items-center justify-between">
+      <Link href="/" className="font-bold text-xl tracking-tight hover:opacity-80 transition-opacity">
+        razbill
+      </Link>
 
-        <nav className="flex items-center gap-8">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={
-                pathname === item.href
-                  ? 'text-foam font-semibold'
-                  : 'text-subtle hover:text-text transition'
-              }
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
+      <div className="flex gap-6">
+        {navItems.map((item) => (
+          <Link
+            key={item.href}
+            href={item.href}
+            className={cn(
+              'text-sm transition-colors hover:text-foreground',
+              pathname === item.href ? 'text-foreground font-medium' : 'text-muted'
+            )}
+          >
+            {item.label}
+          </Link>
+        ))}
       </div>
-    </header>
+    </nav>
   )
 }

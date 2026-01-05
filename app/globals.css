@@ -3,31 +3,17 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply transition-colors duration-200;
+  :root {
+    --font-geist-sans: 'Geist Sans', sans-serif;
+    --font-geist-mono: 'Geist Mono', monospace;
   }
+}
 
-  body {
-    @apply bg-base text-text font-mono antialiased;
-  }
+html {
+  scroll-behavior: smooth;
+  @apply bg-background text-foreground antialiased;
+}
 
-  ::selection {
-    @apply bg-iris bg-opacity-30;
-  }
-
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  ::-webkit-scrollbar-track {
-    @apply bg-surface;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    @apply bg-muted rounded-full;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    @apply bg-subtle;
-  }
+::selection {
+  @apply bg-foreground text-background;
 }

@@ -4,13 +4,8 @@ import { MDXContent } from '@/components/mdx-content'
 import { SocialShare } from '@/components/social-share'
 import { format } from 'date-fns'
 import { compileMDX } from 'next-mdx-remote/rsc'
-import { components as baseComponents } from '@/components/mdx-content'
-import Image from 'next/image'
 import type { Metadata } from 'next'
-import remarkGfm from 'remark-gfm'
-import rehypeSlug from 'rehype-slug'
-import rehypeAutolinkHeadings from 'rehype-autolink-headings'
-import rehypePrettyCode from 'rehype-pretty-code'
+import { FadeIn } from '@/components/ui/fade-in'
 
 interface PostPageProps {
   params: {
@@ -75,32 +70,31 @@ export default async function PostPage({ params }: PostPageProps) {
   })
 
   return (
-    <article className="max-w-content mx-auto">
-      <header className="text-center mb-16 space-y-6">
-        <div className="space-y-4">
-          <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
-            <time dateTime={date}>
-              {format(new Date(date), 'MMMM dd, yyyy')}
-            </time>
-            <span>•</span>
-            <span>{post.readingTime}</span>
-          </div>
-
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+    <article className="max-w-none">
+      <FadeIn>
+        <header className="mb-10 flex flex-col gap-2">
+          <h1 className="text-3xl font-bold tracking-tight text-foreground">
             {title}
           </h1>
+          <div className="flex items-center gap-2 text-sm text-muted">
+            <time dateTime={date}>
+              {format(new Date(date), 'MMMM d, yyyy')}
+            </time>
+            <span>·</span>
+            <span>{post.readingTime}</span>
+          </div>
+        </header>
+
+        <div className="prose prose-invert prose-neutral max-w-none prose-headings:font-semibold prose-headings:tracking-tight prose-a:text-foreground prose-a:underline-offset-4 hover:prose-a:text-muted transition-colors prose-code:font-mono prose-code:text-sm prose-code:bg-subtle/50 prose-code:px-1 prose-code:py-0.5 prose-code:rounded-md prose-pre:bg-subtle/30 prose-pre:border prose-pre:border-subtle">
+          <MDXContent>
+            {mdxContent}
+          </MDXContent>
         </div>
-      </header>
 
-      <div className="prose-custom">
-        <MDXContent>
-          {mdxContent}
-        </MDXContent>
-      </div>
-
-      <footer className="mt-16">
-        <SocialShare url={url} title={title} />
-      </footer>
+        <footer className="mt-16 pt-8 border-t border-subtle">
+          <SocialShare url={url} title={title} />
+        </footer>
+      </FadeIn>
     </article>
   )
 }

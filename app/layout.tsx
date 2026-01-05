@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import { GeistSans } from 'geist/font/sans'
+import { GeistMono } from 'geist/font/mono'
 import { Navigation } from '@/components/navigation'
 import { VimNavigation } from '@/components/vim-navigation'
 import './globals.css'
@@ -18,13 +20,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body>
+    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`} suppressHydrationWarning>
+      <body className="bg-background text-foreground antialiased selection:bg-accent selection:text-foreground">
         <VimNavigation />
-        <Navigation />
-        <main className="container mx-auto px-8 py-16">
-          {children}
-        </main>
+        <div className="mx-auto max-w-2xl px-6 py-12 sm:py-24">
+          <header className="mb-20">
+            <Navigation />
+          </header>
+          <main>
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   )
