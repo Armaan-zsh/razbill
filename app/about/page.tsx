@@ -1,46 +1,48 @@
+import Link from 'next/link'
+import { FadeIn } from '@/components/ui/fade-in'
+
 export default function AboutPage() {
   return (
-    <div className="min-h-[80vh] flex items-center justify-center px-8">
-      <div className="max-w-2xl space-y-8">
-        <h1 className="text-4xl font-bold text-foam mb-8">
-          <span className="text-iris">~/</span>about
+    <FadeIn>
+      <div className="space-y-8 font-serif italic text-lg pr-4">
+        <h1 className="text-3xl font-bold text-foreground mb-8 not-italic font-sans tracking-tight">
+          about
         </h1>
 
-        <div className="space-y-6 text-lg leading-relaxed">
-          <p className="text-text">
-            just a <span className="text-rose">20-year-old nerd</span> with too many browser tabs open
+        <div className="space-y-6 leading-relaxed text-foreground/90">
+          <p>
+            just a <span className="text-foreground font-semibold">20-year-old nerd</span> with too many browser tabs open
             and an unhealthy relationship with vim.
           </p>
 
-          <p className="text-subtle">
+          <p>
             this is where i dump my thoughts—half-baked ideas, debugging journeys,
             and the occasional epiphany that strikes at 3am.
-            <span className="text-foam"> what i write here is what makes sense to me</span>,
+            <span className="text-foreground font-medium"> what i write here is what makes sense to me</span>,
             which may or may not align with reality. proceed with caution.
           </p>
 
-          <p className="text-subtle">
+          <p>
             i write about code, tech, and whatever else crosses my mind.
             sometimes it's insightful. mostly it's just me trying to sound smart.
           </p>
         </div>
 
-        {/* Added links section */}
-        <div className="pt-8 border-t border-gray-800">
-          <p className="text-subtle text-sm">
+        <div className="pt-8 border-t border-subtle font-sans not-italic">
+          <p className="text-muted text-sm">
             find me elsewhere:{' '}
             <a
-              href="https://github.com/Armaan-zsh"
+              href="https://github.com/armaan-zsh"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-iris hover:text-foam underline underline-offset-4 transition-colors"
+              className="text-foreground hover:opacity-80 underline underline-offset-4 transition-opacity"
             >
-              github.com/Armaan-zsh
+              github.com/armaan-zsh
             </a>
           </p>
         </div>
       </div>
-    </div>
+    </FadeIn>
   )
 }
 

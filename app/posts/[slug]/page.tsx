@@ -85,7 +85,7 @@ export default async function PostPage({ params }: PostPageProps) {
           </div>
         </header>
 
-        <div className="prose prose-invert prose-neutral max-w-none prose-headings:font-semibold prose-headings:tracking-tight prose-a:text-foreground prose-a:underline-offset-4 hover:prose-a:text-muted transition-colors prose-code:font-mono prose-code:text-sm prose-code:bg-subtle/50 prose-code:px-1 prose-code:py-0.5 prose-code:rounded-md prose-pre:bg-subtle/30 prose-pre:border prose-pre:border-subtle">
+        <div className="prose prose-invert prose-neutral max-w-none font-serif italic text-lg prose-headings:font-sans prose-headings:not-italic prose-headings:font-bold prose-headings:tracking-tight prose-a:text-foreground prose-a:underline-offset-4 hover:prose-a:text-muted transition-colors prose-code:font-mono prose-code:text-sm prose-code:not-italic prose-code:bg-subtle/50 prose-code:px-1 prose-code:py-0.5 prose-code:rounded-md prose-pre:bg-subtle/30 prose-pre:border prose-pre:border-subtle">
           <MDXContent>
             {mdxContent}
           </MDXContent>
