@@ -9,7 +9,7 @@ export default function HomePage() {
     <div className="flex flex-col gap-8 md:gap-12">
       <FadeIn className="flex flex-col gap-8">
         <h1 className="font-bold text-3xl tracking-tight animate-fade-in text-foreground">
-          armaan
+          Armaan
         </h1>
       </FadeIn>
 
