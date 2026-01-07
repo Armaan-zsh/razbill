@@ -1,8 +1,56 @@
-2:I[225,["895","static/chunks/895-d608ebf3902787dd.js","985","static/chunks/app/poetry/page-93fa84b49526d54f.js"],"FadeIn"]
-3:I[5613,[],""]
-4:I[1778,[],""]
-5:I[8449,["895","static/chunks/895-d608ebf3902787dd.js","250","static/chunks/250-ee6a2e4b274d9612.js","185","static/chunks/app/layout-32f51405bb0ba2c9.js"],"VimNavigation"]
-6:I[2105,["895","static/chunks/895-d608ebf3902787dd.js","250","static/chunks/250-ee6a2e4b274d9612.js","185","static/chunks/app/layout-32f51405bb0ba2c9.js"],"Navigation"]
-0:["GEKub6IP6u_jdeot9Vyaf",[[["",{"children":["poetry",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",{"children":["poetry",{"children":["__PAGE__",{},["$L1",["$","$L2",null,{"children":["$","div",null,{"className":"space-y-8 font-serif italic text-lg pr-4","children":[["$","h1",null,{"className":"text-3xl font-bold text-foreground mb-8 not-italic font-sans tracking-tight","children":"poetry"}],["$","div",null,{"className":"space-y-6 leading-relaxed text-foreground/90","children":["$","p",null,{"children":"coming soon..."}]}]]}]}],null]]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","poetry","children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}]]},[null,["$","html",null,{"lang":"en","className":"__variable_9de95d __variable_c7e5dd","suppressHydrationWarning":true,"children":["$","body",null,{"className":"bg-background text-foreground font-sans antialiased selection:bg-accent selection:text-foreground","children":[["$","$L5",null,{}],["$","div",null,{"className":"mx-auto max-w-2xl px-6 py-12 sm:py-24","children":[["$","header",null,{"className":"mb-20","children":["$","$L6",null,{}]}],["$","main",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]}]]}]]}]}],null]],[[["$","link","0",{"rel":"stylesheet","href":"/razbill/_next/static/css/a89080af8626b961.css","precedence":"next","crossOrigin":""}]],"$L7"]]]]
-7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"~/blog"}],["$","meta","3",{"name":"description","content":"thoughts, code, and caffeine-fueled rants"}],["$","meta","4",{"name":"next-size-adjust"}]]
+2:I[2378,["895","static/chunks/895-aab8a4cba5c904ee.js","985","static/chunks/app/poetry/page-c668d4355e081e34.js"],""]
+3:I[225,["895","static/chunks/895-aab8a4cba5c904ee.js","985","static/chunks/app/poetry/page-c668d4355e081e34.js"],"FadeIn"]
+5:I[5613,[],""]
+6:I[1778,[],""]
+7:I[8449,["895","static/chunks/895-aab8a4cba5c904ee.js","250","static/chunks/250-dc5fb42d973d915f.js","185","static/chunks/app/layout-070417b4fe50a84d.js"],"VimNavigation"]
+8:I[2105,["895","static/chunks/895-aab8a4cba5c904ee.js","250","static/chunks/250-dc5fb42d973d915f.js","185","static/chunks/app/layout-070417b4fe50a84d.js"],"Navigation"]
+4:T431,i was alone  
+noon light sliding in like it was scared to stay  
+iron chair biting into me  
+three apple slices on the plate  
+edges turning rust  
+softening into something almost sinful  
+
+and i thought  
+that’s your skin  
+exactly  
+the way it gives itself to air  
+the way it darkens  
+and still ends up sweeter  
+
+people keep throwing the word beautiful at you  
+like it’s enough  
+like it could ever hold you  
+they never see how you move  
+slow  
+certain  
+like the last chess piece  
+that knows it’s already won  
+
+i see though  
+i see the small things  
+the half-second your lashes drop  
+the way your breath catches  
+when you think no one’s listening  
+the tiny scar on your wrist  
+that only shows in certain light  
+
+you’re the moon  
+wearing all your own clouds  
+and i’m still here  
+watching fruit go bad  
+just to understand  
+how something can rot  
+and still be the most gorgeous thing  
+in the room  
+
+even if you were less beautiful  
+(which you never could be)  
+you’d still be  
+so much beautiful  
+it hurts  
+to look  
+directly  
+at you0:["bvYZrpfgEJW1rrYK5HSzr",[[["",{"children":["poetry",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",{"children":["poetry",{"children":["__PAGE__",{},["$L1",[["$","$L2",null,{}],["$","$L3",null,{"children":["$","div",null,{"className":"space-y-24 font-serif italic text-lg pr-4 relative z-10","children":[["$","h1",null,{"className":"text-3xl font-bold text-foreground mb-8 not-italic font-sans tracking-tight","children":"poetry"}],["$","article",null,{"className":"space-y-6","children":[["$","h2",null,{"className":"text-2xl font-bold not-italic font-sans text-foreground","children":"Sabel Bloom"}],["$","div",null,{"className":"leading-relaxed text-foreground/90 whitespace-pre-wrap","children":"$4"}],["$","p",null,{"className":"text-sm font-sans not-italic text-muted mt-4","children":"— Armaan"}]]}],["$","article",null,{"className":"space-y-6","children":[["$","h2",null,{"className":"text-2xl font-bold not-italic font-sans text-foreground","children":"Crimsonapple"}],["$","div",null,{"className":"leading-relaxed text-foreground/90 whitespace-pre-wrap","children":"nothing ever happens\nand i still write to you\non the inside of matchbooks\non the steam of the mirror after showers\non the dark side of my pillow\nwhere no one looks\ni keep your name\nfolded small\nin the pocket of a coat\ni never wear anymore\nit’s soft now\nlike fabric that’s been washed too many times\nlike the memory of your mouth\noutside, the streetlights hum\nthe same tired song\nand every car that passes\nsounds like the one\nyou never came back in\ni light another cigarette\nwatch the smoke curl\ninto the shape of your shoulders\nit disappears\njust like you did\nslow\nquiet\nbeautiful\ni don’t want loud\ni don’t want answers\ni just want to stay here\nin this room\nwhere the air still tastes like you\nbreathing nothing\nfeeling everything\nnothing ever happens\nbut i still wait\nlike a song on repeat\nthat forgot how to end\nand if you ever walked back in\ni wouldn’t even ask why\ni’d just let the ash fall\nand say your name\nonce\nsoft\nlike a secret\nthe night already knows"}],["$","p",null,{"className":"text-sm font-sans not-italic text-muted mt-4","children":"— Armaan"}]]}]]}]}]],null]]},["$","$L5",null,{"parallelRouterKey":"children","segmentPath":["children","poetry","children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}]]},[null,["$","html",null,{"lang":"en","className":"__variable_9de95d __variable_c7e5dd","suppressHydrationWarning":true,"children":["$","body",null,{"className":"bg-background text-foreground font-sans antialiased selection:bg-accent selection:text-foreground","children":[["$","$L7",null,{}],["$","div",null,{"className":"mx-auto max-w-2xl px-6 py-12 sm:py-24","children":[["$","header",null,{"className":"mb-20","children":["$","$L8",null,{}]}],["$","main",null,{"children":["$","$L5",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]}]]}]]}]}],null]],[[["$","link","0",{"rel":"stylesheet","href":"/razbill/_next/static/css/42a4fba4d18c81be.css","precedence":"next","crossOrigin":""}]],"$L9"]]]]
+9:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"~/blog"}],["$","meta","3",{"name":"description","content":"thoughts, code, and caffeine-fueled rants"}],["$","meta","4",{"name":"next-size-adjust"}]]
 1:null
