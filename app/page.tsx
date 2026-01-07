@@ -11,10 +11,7 @@ export default function HomePage() {
         <h1 className="font-bold text-3xl tracking-tight animate-fade-in text-foreground">
           armaan
         </h1>
-        <p className="max-w-lg leading-relaxed font-serif italic text-lg">
-          i break things and sometimes fix them. currently learning about
-          systems, distributed computing, and life.
-        </p>
+
       </FadeIn>
 
       <FadeIn delay={0.2} className="flex flex-col gap-8">
