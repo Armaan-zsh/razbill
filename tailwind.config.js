@@ -17,8 +17,9 @@ module.exports = {
         accent: '#333333',
       },
       fontFamily: {
-        sans: ['var(--font-geist-sans)'],
-        mono: ['var(--font-geist-mono)'],
+        sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
+        serif: ['var(--font-serif)', 'serif'],
+        mono: ['var(--font-geist-mono)', 'monospace'], // Keep Geist Mono if desired, or switch
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',

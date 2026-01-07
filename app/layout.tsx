@@ -1,9 +1,21 @@
 import type { Metadata } from 'next'
-import { GeistSans } from 'geist/font/sans'
-import { GeistMono } from 'geist/font/mono'
+import { Inter, Newsreader } from 'next/font/google'
 import { Navigation } from '@/components/navigation'
 import { VimNavigation } from '@/components/vim-navigation'
 import './globals.css'
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-sans',
+  display: 'swap',
+})
+
+const newsreader = Newsreader({
+  subsets: ['latin'],
+  variable: '--font-serif',
+  display: 'swap',
+  adjustFontFallback: false,
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://armaan-zsh.github.io/razbill'),
@@ -20,8 +32,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`} suppressHydrationWarning>
-      <body className="bg-background text-foreground antialiased selection:bg-accent selection:text-foreground">
+    <html lang="en" className={`${inter.variable} ${newsreader.variable}`} suppressHydrationWarning>
+      <body className="bg-background text-foreground font-sans antialiased selection:bg-accent selection:text-foreground">
         <VimNavigation />
         <div className="mx-auto max-w-2xl px-6 py-12 sm:py-24">
           <header className="mb-20">

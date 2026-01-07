@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://armaan-zsh.github.io/razbill</loc>
-<lastmod>2026-01-05T13:40:37.284Z</lastmod>
+<lastmod>2026-01-07T09:17:30.996Z</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 <url>
 <loc>https://armaan-zsh.github.io/razbill/archive</loc>
-<lastmod>2026-01-05T13:40:37.284Z</lastmod>
+<lastmod>2026-01-07T09:17:30.996Z</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://armaan-zsh.github.io/razbill/about</loc>
-<lastmod>2026-01-05T13:40:37.284Z</lastmod>
+<lastmod>2026-01-07T09:17:30.996Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
