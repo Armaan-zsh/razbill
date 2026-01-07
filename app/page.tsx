@@ -6,12 +6,11 @@ export default function HomePage() {
   const posts = getAllPostsSync()
 
   return (
-    <div className="flex flex-col gap-16 md:gap-24">
+    <div className="flex flex-col gap-8 md:gap-12">
       <FadeIn className="flex flex-col gap-8">
         <h1 className="font-bold text-3xl tracking-tight animate-fade-in text-foreground">
           armaan
         </h1>
-
       </FadeIn>
 
       <FadeIn delay={0.2} className="flex flex-col gap-8">
